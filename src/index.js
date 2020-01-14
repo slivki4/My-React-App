@@ -1,50 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import lowerCaseAndSort from './utils/string-utils';
 
-function renderApp(){
-   ReactDOM.render(<Header />, document.getElementById('root'));
-}
+const data = ['Germany', 'Albania', 'Unated Stated', 'United Kingdom', 'Bulgaria'];
 
-let logoText = 'Logo Placeholder';
+const modifiedData = lowerCaseAndSort(data);
+console.log(modifiedData);
 
-const handleNavLinkClick = (e) => {
-  e.preventDefault();
-  const content = e.target.innerHTML;
-
-  logoText = content;
-  renderApp();
-}
-
-const Logo = () => {
-  return (
-    <div>
-      <h1>{logoText}</h1>
-    </div>
-  );
-};
-
-const Navigation = () => {
-  const className = 'site-nav';
-  const linkClassName = `${className}-link`;
-  return (
-    <nav className={className}>
-      <ul>
-        <li><a className={linkClassName} href="/" onClick={handleNavLinkClick}>Home</a></li>
-        <li><a className={linkClassName} href="/" onClick={handleNavLinkClick}>Contact</a></li>
-        <li><a className={linkClassName} href="/" onClick={handleNavLinkClick}>About</a></li>
-      </ul>
-    </nav>
-  );
-};
-
-const Header = () => {
+function Header(){
   return (
     <header>
-      <Logo />
-      <Navigation />
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
-};
+}
 
-renderApp();
+ReactDOM.render(
+  <Header />, 
+  document.getElementById('root')
+);
