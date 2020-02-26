@@ -23,10 +23,6 @@ const books = [
   } 
 ];
 
-var first = [1,2,3]
-var second = [1, 2, 3, 4, 5]
-const third = [1]
-
 function BookList(props){
   const {books} = props;
   return (
