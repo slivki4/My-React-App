@@ -22,7 +22,7 @@ const books = [
     year: 2014
   } 
 ];
-
+var bar = [1]
 function BookList(props){
   const {books} = props;
   return (
