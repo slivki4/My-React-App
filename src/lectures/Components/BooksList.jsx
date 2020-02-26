@@ -24,6 +24,7 @@ const books = [
   } 
 ];
 
+var bar = [1,2,3]
 
 function BookList(props){
   const {books} = props;
