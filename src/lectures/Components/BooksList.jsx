@@ -7,17 +7,20 @@ const books = [
   {
     id: 1,
     title: "Lord of the rings",
-    author: "J.R.R. Tolkien"
+    author: "J.R.R. Tolkien",
+    year: 2014
   },
   {
     id: 2,
     title: "Harry Potter and the Order of the Phoenix",
-    author: "J.K. Rowling"
+    author: "J.K. Rowling",
+    year: 2015
   },
   {
     id: 3,
     title: "Game of Thrones",
-    author: "J.R.R. Martyn"
+    author: "J.R.R. Martyn",
+    year: 2016
   } 
 ];
 
