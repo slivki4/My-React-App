@@ -2,7 +2,6 @@ import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-
 const books = [
   {
     id: 1,
@@ -27,6 +26,7 @@ const books = [
 var foo = [1, 2]
 
 
+var bar = [1]
 function BookList(props){
   const {books} = props;
   return (
